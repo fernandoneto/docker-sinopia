@@ -1,0 +1,34 @@
+sinopia:
+  restart: on-failure:10
+  environment:
+    STORAGE: /data
+    ADMIN_PASSWORD: c8fed00eb2e87f1cee8e90ebbe870c190ac3848c
+    WEB_INTERFACE: 'true'
+    TITLE: sinopia
+    UPLINKS: https://registry.npmjs.org/
+    TIMEOUT: 30s
+    MAXAGE: 60s
+    MAX_FAILS: '3'
+    FAIL_TIMEOUT: 1m
+    PRIVATE_PREFIX: private-*
+    PRIVATE_PACKAGES_ACESS: authenticated
+    PRIVATE_PACKAGES_PUBLISH: authenticated
+    PUBLIC_PACKAGES_ACESS: authenticated
+    PUBLIC_PACKAGES_PUBLISH: authenticated
+    LISTEN_ADRESS: 0.0.0.0:4873
+    MAX_BODY_SIZE: 1mb
+    IGNORE_LATEST_TAG: false
+    LDAP: 'true'
+    LDAP_TYPE: ldap
+    LDAP_GROUP_NAME_ATTRIBUTE: uid
+    LDAP_CLIENT_URL: ldap://ldap.example.com
+    LDAP_CLIENT_ADMIN_DN: '"dn=admin\,dn=example\,dn=com"'
+    LDAP_CLIENT_ADMIN_PASSWORD: c8fed00eb2e87f1cee8e90ebbe870c190ac3848c
+    LDAP_CLIENT_ADMIN_SEARCH_BASE: '"ou=People\,dn=example\,dn=com"'
+    LDAP_CLIENT_ADMIN_SEARCH_FILTER: '"(uid={{username}})"'
+    LDAP_CLIENT_CACHE: False
+    LDAP_CLIENT_REJECT_UNAUTHORIZED: True
+  tty: true
+  privileged: true
+  image: sinopia
+  stdin_open: true

@@ -1,0 +1,49 @@
+storage: {{STORAGE}}
+
+users:
+  admin:
+    password: {{ADMIN_PASSWORD}}
+
+web:
+  enable: {{WEB_INTERFACE}}
+  title: {{TITLE}}
+
+auth:
+  ldap:
+    type: {{LDAP_TYPE}}
+    groupNameAttribute: '{{LDAP_GROUP_NAME_ATTRIBUTE}}'
+    client_options:
+      url: "{{LDAP_CLIENT_URL}}"
+      adminDn: {{LDAP_CLIENT_ADMIN_DN}}
+      adminPassword: "{{LDAP_CLIENT_ADMIN_PASSWORD}}"
+      searchBase: {{LDAP_CLIENT_ADMIN_SEARCH_BASE}}
+      searchFilter: {{LDAP_CLIENT_ADMIN_SEARCH_FILTER}}
+      cache: {{LDAP_CLIENT_CACHE}}
+      tlsOptions:
+        rejectUnauthorized: {{LDAP_CLIENT_REJECT_UNAUTHORIZED}}
+uplinks:
+  npmjs:
+    url: {{UPLINKS}}
+    timeout: {{TIMEOUT}}
+    maxage: {{MAXAGE}}
+    max_fails: {{MAX_FAILS}}
+    fail_timeout: {{FAIL_TIMEOUT}}
+
+packages:
+  '{{PRIVATE_PREFIX}}':
+    access: ${{PRIVATE_PACKAGES_ACESS}}
+    publish: ${{PRIVATE_PACKAGES_PUBLISH}}
+
+  '*':
+    access: ${{PUBLIC_PACKAGES_ACESS}}
+    publish: ${{PUBLIC_PACKAGES_PUBLISH}}
+    proxy: npmjs
+
+listen:
+ - {{LISTEN_ADRESS}}
+
+logs:
+  - {type: stdout, format: pretty, level: http}
+
+max_body_size: {{MAX_BODY_SIZE}}
+ignore_latest_tag: {{IGNORE_LATEST_TAG}}
