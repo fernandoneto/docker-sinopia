@@ -12,11 +12,11 @@ MAXAGE=${MAXAGE:-60s}
 MAX_FAILS=${MAX_FAILS:-3}
 FAIL_TIMEOUT=${FAIL_TIMEOUT:-1m}
 PRIVATE_PREFIX=${PRIVATE_PREFIX:-''private-*''}
-PRIVATE_PACKAGES_ACESS=${PRIVATE_PACKAGES_ACESS:-authenticated}
+PRIVATE_PACKAGES_ACCESS=${PRIVATE_PACKAGES_ACCESS:-authenticated}
 PRIVATE_PACKAGES_PUBLISH=${PRIVATE_PACKAGES_PUBLISH:-authenticated}
-PUBLIC_PACKAGES_ACESS=${PUBLIC_PACKAGES_ACESS:-authenticated}
-PUBLIC_PACKAGES_PUBLISH=${PUBLIC_PACKAGES_ACESS:-authenticated}
-LISTEN_ADRESS=${LISTEN_ADRESS:-0.0.0.0:4873}
+PUBLIC_PACKAGES_ACCESS=${PUBLIC_PACKAGES_ACCESS:-authenticated}
+PUBLIC_PACKAGES_PUBLISH=${PUBLIC_PACKAGES_ACCESS:-authenticated}
+LISTEN_ADDRESS=${LISTEN_ADDRESS:-0.0.0.0:4873}
 MAX_BODY_SIZE=${MAX_BODY_SIZE:-1mb}
 IGNORE_LATEST_TAG=${IGNORE_LATEST_TAG:-false}
 
@@ -45,10 +45,10 @@ sed 's,{{MAXAGE}},'"${MAXAGE}"',g' -i /sinopia/config.yaml
 sed 's,{{MAX_FAILS}},'"${MAX_FAILS}"',g' -i /sinopia/config.yaml
 sed 's,{{FAIL_TIMEOUT}},'"${FAIL_TIMEOUT}"',g' -i /sinopia/config.yaml
 sed 's,{{PRIVATE_PREFIX}},'"${PRIVATE_PREFIX}"',g' -i /sinopia/config.yaml
-sed 's,{{LISTEN_ADRESS}},'"${LISTEN_ADRESS}"',g' -i /sinopia/config.yaml
-sed 's,{{PRIVATE_PACKAGES_ACESS}},'"${PUBLIC_PACKAGES_ACESS}"',g' -i /sinopia/config.yaml
+sed 's,{{LISTEN_ADDRESS}},'"${LISTEN_ADDRESS}"',g' -i /sinopia/config.yaml
+sed 's,{{PRIVATE_PACKAGES_ACCESS}},'"${PUBLIC_PACKAGES_ACCESS}"',g' -i /sinopia/config.yaml
 sed 's,{{PRIVATE_PACKAGES_PUBLISH}},'"${PRIVATE_PACKAGES_PUBLISH}"',g' -i /sinopia/config.yaml
-sed 's,{{PUBLIC_PACKAGES_ACESS}},'"${PUBLIC_PACKAGES_ACESS}"',g' -i /sinopia/config.yaml
+sed 's,{{PUBLIC_PACKAGES_ACCESS}},'"${PUBLIC_PACKAGES_ACCESS}"',g' -i /sinopia/config.yaml
 sed 's,{{PUBLIC_PACKAGES_PUBLISH}},'"${PUBLIC_PACKAGES_PUBLISH}"',g' -i /sinopia/config.yaml
 sed 's,{{MAX_BODY_SIZE}},'"${MAX_BODY_SIZE}"',g' -i /sinopia/config.yaml
 sed 's,{{IGNORE_LATEST_TAG}},'"${IGNORE_LATEST_TAG}"',g' -i /sinopia/config.yaml

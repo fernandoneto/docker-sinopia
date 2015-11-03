@@ -11,11 +11,11 @@ sinopia:
     MAX_FAILS: '3'
     FAIL_TIMEOUT: 1m
     PRIVATE_PREFIX: private-*
-    PRIVATE_PACKAGES_ACESS: authenticated
+    PRIVATE_PACKAGES_ACCESS: authenticated
     PRIVATE_PACKAGES_PUBLISH: authenticated
-    PUBLIC_PACKAGES_ACESS: authenticated
+    PUBLIC_PACKAGES_ACCESS: authenticated
     PUBLIC_PACKAGES_PUBLISH: authenticated
-    LISTEN_ADRESS: 0.0.0.0:4873
+    LISTEN_ADDRESS: 0.0.0.0:4873
     MAX_BODY_SIZE: 1mb
     IGNORE_LATEST_TAG: false
     LDAP: 'true'

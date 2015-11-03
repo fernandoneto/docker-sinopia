@@ -31,16 +31,16 @@ uplinks:
 
 packages:
   '{{PRIVATE_PREFIX}}':
-    access: ${{PRIVATE_PACKAGES_ACESS}}
+    access: ${{PRIVATE_PACKAGES_ACCESS}}
     publish: ${{PRIVATE_PACKAGES_PUBLISH}}
 
   '*':
-    access: ${{PUBLIC_PACKAGES_ACESS}}
+    access: ${{PUBLIC_PACKAGES_ACCESS}}
     publish: ${{PUBLIC_PACKAGES_PUBLISH}}
     proxy: npmjs
 
 listen:
- - {{LISTEN_ADRESS}}
+ - {{LISTEN_ADDRESS}}
 
 logs:
   - {type: stdout, format: pretty, level: http}
