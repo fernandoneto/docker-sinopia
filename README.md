@@ -51,9 +51,9 @@ This is the variables you can set
 
 For more detailed information about sinopia and sinopia-ldap take a look in official repos.
 
-* (sinopia)[https://github.com/rlidwka/sinopia]
-* (sinopia-ldap)[https://github.com/rlidwka/sinopia-ldap
-]
+* [sinopia](https://github.com/rlidwka/sinopia)
+* [sinopia-ldap](https://github.com/rlidwka/sinopia-ldap)
+
 ## TODO
 
 * improvement documentation
