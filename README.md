@@ -36,16 +36,16 @@ This is the variables you can set
 
 ### LDAP variables
 
-`LDAP` - default value is  false
-`LDAP_TYPE` - default value is  ldap
-`LDAP_GROUP_NAME_ATTRIBUTE` - default value is `uid`
-`LDAP_CLIENT_URL` - default value is ldap://ldap.example.com
-`LDAP_CLIENT_ADMIN_DN` - default value is dn=admin,dn=example,dn=com
-`LDAP_CLIENT_ADMIN_PASSWORD` - default value is c8fed00eb2e87f1cee8e90ebbe870c190ac3848c
-`LDAP_CLIENT_ADMIN_SEARCH_BASE` - default value is ou=People,dn=example,dn=com
-`LDAP_CLIENT_ADMIN_SEARCH_FILTER` - default value is (uid={{username}})
-`LDAP_CLIENT_CACHE` - default value is False
-`LDAP_CLIENT_REJECT_UNAUTHORIZED` - default value is True
+- `LDAP` - default value is  false
+- `LDAP_TYPE` - default value is  ldap
+- `LDAP_GROUP_NAME_ATTRIBUTE` - default value is `uid`
+- `LDAP_CLIENT_URL` - default value is ldap://ldap.example.com
+- `LDAP_CLIENT_ADMIN_DN` - default value is dn=admin,dn=example,dn=com
+- `LDAP_CLIENT_ADMIN_PASSWORD` - default value is c8fed00eb2e87f1cee8e90ebbe870c190ac3848c
+- `LDAP_CLIENT_ADMIN_SEARCH_BASE` - default value is ou=People,dn=example,dn=com
+- `LDAP_CLIENT_ADMIN_SEARCH_FILTER` - default value is (uid={{username}})
+- `LDAP_CLIENT_CACHE` - default value is False
+- `LDAP_CLIENT_REJECT_UNAUTHORIZED` - default value is True
 
 ### Documentation
 

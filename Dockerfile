@@ -1,4 +1,4 @@
-FROM cusspvz/node:4.1.2
+FROM cusspvz/node:5.1.1
 MAINTAINER Fernando Neto <fernado.neto@junglecloud.com>
 
 RUN mkdir -p /sinopia;
